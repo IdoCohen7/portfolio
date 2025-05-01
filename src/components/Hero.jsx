@@ -15,7 +15,6 @@ import {
   DiNodejsSmall,
   DiReact,
 } from "react-icons/di";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -71,7 +70,7 @@ const Hero = () => {
             className="flex flex-row items-center gap-6 my-4 md:mb-0"
           >
             <motion.a
-              href="/IdoCohen_CV.pdf"
+              href="/Ido_Cohen_CV.pdf"
               download
               whileHover={{
                 scale: 1.05,

@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 import emailjs from "emailjs-com";
 
