@@ -15,6 +15,7 @@ import {
   DiNodejsSmall,
   DiReact,
 } from "react-icons/di";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
