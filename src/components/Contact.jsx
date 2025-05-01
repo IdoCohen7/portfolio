@@ -39,12 +39,14 @@ const Contact = () => {
                 About <span>Me</span>
               </h3>
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                Motivated software engineer specializing in application
-                development, with hands-on experience in back-end, cloud, and
-                UI/UX. Developed and deployed scalable applications using AWS
-                and .NET. Passionate about tackling complex challenges, learning
-                new technologies, and driving impactful projects. Seeking to
-                contribute my expertise to a dynamic development team.
+                Full-stack software engineer with strong team collaboration and
+                independent problem-solving skills. Proven experience in
+                building and deploying scalable applications using AWS, .NET,
+                and modern frontend technologies. Highly adaptable, with
+                excellent interpersonal skills and a passion for continuous
+                learning and tackling complex challenges. Looking to join a
+                dynamic development team where I can grow professionally and
+                make a meaningful impact.
               </p>
             </div>
           </div>
