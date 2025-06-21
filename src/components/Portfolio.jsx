@@ -4,6 +4,7 @@ import udemyProject from "../assets/udemy.png";
 import myBookProject from "../assets/mybook.png";
 import natoursProject from "../assets/natours.png";
 import drinkBuddyProject from "../assets/drinkbuddy.png";
+import investItProject from "../assets/investit.png";
 import { AiFillGithub, AiOutlineGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
 
@@ -44,6 +45,16 @@ const projects = [
     links: {
       site: "http://drink-buddy-s3.s3-website-us-east-1.amazonaws.com/landing.html",
       github: "https://github.com/IdoCohen7/drinkBuddy",
+    },
+  },
+  {
+    img: investItProject,
+    title: "Invest It (Work in Progress)",
+    description:
+      "A social platform for finance enthusiasts, connecting beginners with experts. Includes chat rooms, post feed, profile management, live stock data, and financial news. Smart content recommendations coming soon.",
+    links: {
+      site: "https://proj.ruppin.ac.il/cgroup75/test2/tar2/dist/index.html",
+      github: "https://github.com/IdoCohen7/InvestIt",
     },
   },
 ];
