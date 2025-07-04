@@ -5,7 +5,9 @@ import myBookProject from "../assets/mybook.png";
 import natoursProject from "../assets/natours.png";
 import drinkBuddyProject from "../assets/drinkbuddy.png";
 import investItProject from "../assets/investit.png";
-import { AiFillGithub, AiOutlineGithub } from "react-icons/ai";
+import truckBamoshava from "../assets/truckbamoshava.png";
+import cafeDeaz from "../assets/cafedeaz.png";
+import { AiOutlineGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
 
 const projects = [
@@ -59,10 +61,32 @@ const projects = [
   },
 ];
 
+const landingPages = [
+  {
+    img: truckBamoshava, // תמונה של Truck BaMoshava
+    title: "Truck Bamoshava | טראק במושבה",
+    description:
+      "A stylish, responsive landing page for a food truck business.",
+    links: {
+      site: "https://truckbamoshava.co.il",
+    },
+  },
+  {
+    img: cafeDeaz, // תמונה של Cafe De Az
+    title: "Cafe Deaz | קפה דאז",
+    description: "A visually engaging landing page for a boutique truck café.",
+    links: {
+      site: "https://cafedeaz.co.il",
+    },
+  },
+];
+
 const Portfolio = () => {
   return (
     <div className="max-w-[1000px] mx-auto p-6 md:my-20" id="portfolio">
       <h2 className="text-3xl font-bold text-gray-200 mb-8">Portfolio</h2>
+
+      {/* Main Projects */}
       {projects.map((project, index) => (
         <Reveal key={index}>
           <div
@@ -97,6 +121,50 @@ const Portfolio = () => {
                     className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300"
                   >
                     <AiOutlineGithub />
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </Reveal>
+      ))}
+
+      {/* Landing Pages Section */}
+      <h2 className="text-3xl font-bold text-gray-200 mt-20 mb-8">
+        Landing Pages
+      </h2>
+      {landingPages.map((page, index) => (
+        <Reveal key={`landing-${index}`}>
+          <div
+            className={`flex flex-col md:flex-row ${
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            } mb-12`}
+          >
+            <div className="w-full md:w-1/2 p-4">
+              {page.img ? (
+                <img
+                  src={page.img}
+                  alt={page.title}
+                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                />
+              ) : (
+                <div className="w-full h-64 bg-slate-800 rounded-lg flex items-center justify-center text-gray-500">
+                  No image yet
+                </div>
+              )}
+            </div>
+            <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
+              <h3 className="text-2xl font-semibold text-gray-200 mb-4">
+                {page.title}
+              </h3>
+              <p className="text-gray-300 mb-4">{page.description}</p>
+              <div>
+                {page.links.site && (
+                  <a
+                    href={page.links.site}
+                    className="inline-block px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300"
+                  >
+                    View Site
                   </a>
                 )}
               </div>

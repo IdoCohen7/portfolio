@@ -60,7 +60,7 @@ const Hero = () => {
             className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
           >
             I am seeking a challenging position in a professional environment
-            where I can apply my skills and knowledge!
+            where I can apply my skills and knowledge.
           </motion.p>
 
           <motion.div
