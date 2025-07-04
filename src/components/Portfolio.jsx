@@ -74,7 +74,7 @@ const landingPages = [
   {
     img: cafeDeaz, // תמונה של Cafe De Az
     title: "Cafe Deaz | קפה דאז",
-    description: "A visually engaging landing page for a boutique truck café.",
+    description: "A visually engaging landing page for a boutique coffee truck.",
     links: {
       site: "https://cafedeaz.co.il",
     },
