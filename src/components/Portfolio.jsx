@@ -4,6 +4,8 @@ import udemyProject from "../assets/udemy.png";
 import myBookProject from "../assets/mybook.png";
 import natoursProject from "../assets/natours.png";
 import drinkBuddyProject from "../assets/drinkbuddy.png";
+import bonAppetitProject from "../assets/bonAppetit.png";
+import trapTheCatProject from "../assets/trapthecat.png";
 import investItProject from "../assets/investit.png";
 import truckBamoshava from "../assets/truckbamoshava.png";
 import cafeDeaz from "../assets/cafedeaz.png";
@@ -26,7 +28,6 @@ const projects = [
     description:
       "Developed a digital library website featuring book and user management and integrated the Google Books API.",
     links: {
-      site: "https://proj.ruppin.ac.il/cgroup75/test2/tar6/index.html",
       github: "https://github.com/IdoCohen7/AILibrary",
     },
   },
@@ -45,15 +46,24 @@ const projects = [
     description:
       "Developed a cloud-based daily hydration tracking system using AWS, leveraging serverless architecture for real-time data storage, analysis, and personalized hydration reminders.",
     links: {
-      site: "http://drink-buddy-s3.s3-website-us-east-1.amazonaws.com/landing.html",
       github: "https://github.com/IdoCohen7/drinkBuddy",
     },
   },
   {
-    img: investItProject,
-    title: "Invest It (Work in Progress)",
+    img: bonAppetitProject, // שים null אם אין לך עדיין תמונה
+    title: "BonAppetit",
     description:
-      "A social platform for finance enthusiasts, connecting beginners with experts. Includes chat rooms, post feed, profile management, live stock data, and financial news. Smart content recommendations coming soon.",
+      "A cloud-based restaurant ordering system built using AWS Serverless architecture. Customers can place orders for delivery or pickup, while restaurant staff can manage the menu, orders, and delivery assignments. Features real-time updates, scheduled tasks, user authentication, and route estimation.",
+    links: {
+      site: "http://bonapetit-website.s3-website-us-east-1.amazonaws.com/",
+      github: "https://github.com/IdoCohen7/BonAppetit", // אם יש לך רפו, אחרת תוכל להסיר את השורה
+    },
+  },
+  {
+    img: investItProject,
+    title: "Invest It",
+    description:
+      "A social platform for finance enthusiasts that connects beginners with experts. Features include chat rooms, a dynamic post feed, user profiles, live stock data, and financial news. The app supports real-time messaging via Supabase and leverages an intelligent algorithm to categorize posts based on user interests.",
     links: {
       site: "https://proj.ruppin.ac.il/cgroup75/test2/tar2/dist/index.html",
       github: "https://github.com/IdoCohen7/InvestIt",
@@ -74,9 +84,23 @@ const landingPages = [
   {
     img: cafeDeaz, // תמונה של Cafe De Az
     title: "Cafe Deaz | קפה דאז",
-    description: "A visually engaging landing page for a boutique coffee truck.",
+    description:
+      "A visually engaging landing page for a boutique coffee truck.",
     links: {
       site: "https://cafedeaz.co.il",
+    },
+  },
+];
+
+const games = [
+  {
+    img: trapTheCatProject,
+    title: "Trap The Cat",
+    description:
+      "A strategy game where the player must trap a cat attempting to escape a hexagonal grid. In each turn, the player can block one tile or place a mouse bait to distract the cat. The cat uses a combination of A* pathfinding and Minimax algorithms to intelligently plan its moves, break through defenses, and reach the edge of the board. Built with Python and Pygame, featuring smooth animations, sound effects, and real-time decision-making.",
+    links: {
+      github: "https://github.com/IdoCohen7/TrapTheCat",
+      demo: "https://www.youtube.com/watch?v=xsYrPa3r9XI&ab_channel=IdoCohen",
     },
   },
 ];
@@ -167,6 +191,61 @@ const Portfolio = () => {
                     View Site
                   </a>
                 )}
+              </div>
+            </div>
+          </div>
+        </Reveal>
+      ))}
+      {/* Games Section */}
+      <h2 className="text-3xl font-bold text-gray-200 mt-20 mb-8">Games</h2>
+      {games.map((game, index) => (
+        <Reveal key={`game-${index}`}>
+          <div
+            className={`flex flex-col md:flex-row ${
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            } mb-12`}
+          >
+            <div className="w-full md:w-1/2 p-4">
+              {game.img ? (
+                <img
+                  src={game.img}
+                  alt={game.title}
+                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                />
+              ) : (
+                <div className="w-full h-64 bg-slate-800 rounded-lg flex items-center justify-center text-gray-500">
+                  No image yet
+                </div>
+              )}
+            </div>
+            <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
+              <h3 className="text-2xl font-semibold text-gray-200 mb-4">
+                {game.title}
+              </h3>
+              <p className="text-gray-300 mb-4">{game.description}</p>
+              <div>
+                <div className="flex space-x-4">
+                  {game.links.demo && (
+                    <a
+                      href={game.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300"
+                    >
+                      View Demo
+                    </a>
+                  )}
+                  {game.links.github && (
+                    <a
+                      href={game.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300"
+                    >
+                      <AiOutlineGithub />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
