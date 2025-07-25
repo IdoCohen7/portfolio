@@ -71,7 +71,7 @@ const Hero = () => {
             className="flex flex-row items-center gap-6 my-4 md:mb-0"
           >
             <motion.a
-              href="/Ido_Cohen_CV.pdf"
+              href="/IdoCohen_CV.pdf"
               download
               whileHover={{
                 scale: 1.05,
