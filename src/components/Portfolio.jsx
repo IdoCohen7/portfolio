@@ -5,7 +5,7 @@ import myBookProject from "../assets/mybook.png";
 import natoursProject from "../assets/natours.png";
 import drinkBuddyProject from "../assets/drinkbuddy.png";
 import bonAppetitProject from "../assets/bonAppetit.png";
-import trapTheCatProject from "../assets/trapthecat.png";
+import trapTheCatProject from "../assets/trapTheCat.png";
 import investItProject from "../assets/investit.png";
 import truckBamoshava from "../assets/truckbamoshava.png";
 import cafeDeaz from "../assets/cafedeaz.png";
