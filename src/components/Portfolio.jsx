@@ -7,6 +7,7 @@ import drinkBuddyProject from "../assets/drinkbuddy.png";
 import bonAppetitProject from "../assets/bonAppetit.png";
 import trapTheCatProject from "../assets/trapTheCat.png";
 import investItProject from "../assets/investit.png";
+import movieStarProject from "../assets/moviestar.png";
 import truckBamoshava from "../assets/truckbamoshava.png";
 import cafeDeaz from "../assets/cafedeaz.png";
 import { AiOutlineGithub } from "react-icons/ai";
@@ -67,6 +68,15 @@ const projects = [
     links: {
       site: "https://proj.ruppin.ac.il/cgroup75/test2/tar2/dist/index.html",
       github: "https://github.com/IdoCohen7/InvestIt",
+    },
+  },
+  {
+    img: movieStarProject,
+    title: "Movie Star (Work in progress)",
+    description:
+      "A movie discovery react native platform that allows users to search for movies, view details, and manage their watchlist. The app features a responsive design, user authentication, and integrates with the TMDB API for real-time movie data.",
+    links: {
+      github: "https://github.com/IdoCohen7/MovieStar",
     },
   },
 ];
