@@ -8,7 +8,7 @@ import bonAppetitProject from "../assets/bonAppetit.png";
 import trapTheCatProject from "../assets/trapTheCat.png";
 import investItProject from "../assets/investit.png";
 import truckBamoshava from "../assets/truckbamoshava.png";
-import movieStarProject from "../assets/movieStar.png";
+import movieStarProject from "../assets/iMockup - Device.png";
 import cafeDeaz from "../assets/cafedeaz.png";
 import { AiOutlineGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
@@ -72,7 +72,8 @@ const projects = [
   },
   {
     img: movieStarProject,
-    title: "Movie Star (Work in progress)",
+    title: "MovieStar",
+    className: "w-1/3 mx-auto",
     description:
       "A movie discovery react native platform that allows users to search for movies, view details, and manage their watchlist. The app features a responsive design, user authentication, and integrates with the TMDB API for real-time movie data.",
     links: {
@@ -132,7 +133,9 @@ const Portfolio = () => {
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                className={`w-full h-full object-cover rounded-lg shadow-lg ${
+                  project.className || ""
+                }`}
               />
             </div>
             <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
