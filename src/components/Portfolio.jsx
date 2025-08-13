@@ -133,8 +133,10 @@ const Portfolio = () => {
               <img
                 src={project.img}
                 alt={project.title}
-                className={`w-full h-full object-cover rounded-lg shadow-lg ${
-                  project.className || ""
+                className={`rounded-lg shadow-lg ${
+                  project.className
+                    ? `${project.className} block h-auto object-contain`
+                    : "w-full h-full object-cover"
                 }`}
               />
             </div>
