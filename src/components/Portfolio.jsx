@@ -9,6 +9,7 @@ import trapTheCatProject from "../assets/trapTheCat.png";
 import investItProject from "../assets/investit.png";
 import truckBamoshava from "../assets/truckbamoshava.png";
 import movieStarProject from "../assets/iMockup - Device.png";
+import travelGenieProject from "../assets/travelGenie.png";
 import cafeDeaz from "../assets/cafedeaz.png";
 import { AiOutlineGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
@@ -78,6 +79,16 @@ const projects = [
       "A movie discovery react native platform that allows users to search for movies, view details, and manage their watchlist. The app features a responsive design, user authentication, and integrates with the TMDB API for real-time movie data.",
     links: {
       github: "https://github.com/IdoCohen7/MovieStar",
+    },
+  },
+  {
+    img: travelGenieProject,
+    title: "Travel Genie",
+    description:
+      "A full-stack web application that helps users plan smart, personalized trips with ease. It leverages Gemini 2.0 Flash AI to generate custom itineraries, provides PDF exportion and integrates with Booking.com for hotel booking.",
+    links: {
+      site: "https://relaxed-beijinho-92329e.netlify.app/",
+      github: "https://github.com/IdoCohen7/TravelGenie",
     },
   },
 ];
